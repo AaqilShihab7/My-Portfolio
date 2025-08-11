@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#education {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#education h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+#education form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#education form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#education form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+#education form button:hover {
+    background-color: #0056b3;
+}
+
+#educationList {
+    margin-top: 20px;
+}
+
+#educationList ul {
+    list-style: none;
+    padding: 0;
+}
+
+#educationList li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#educationList li:last-child {
+    border-bottom: none;
+}

@@ -1,0 +1,120 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+.icon {
+    margin-bottom: -40px;
+    margin-right: -1500px;
+    font-size: 30px;
+}
+
+.icon a {
+    color: red;
+}
+
+.icon a i:hover { /* Remove the space between 'i' and ':hover' */
+    color: blue;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header h1 {
+    font-size: 40px;
+    color: #34495e;
+   
+    font-family: Magneto;
+    color: #34495e;
+    background: linear-gradient(135deg,#0000A1,#00A1D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 20px;
+    color: #7f8c8d;
+
+}
+
+/* Cart Container Styling */
+.cart-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Cart Box Styling */
+.cart-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart-box:hover {
+    transform: translateY(-5px); 
+   box-shadow: 0 10px 25px #0000A1;
+}
+
+.cart-box h2 {
+    font-size: 18px;
+    color: #0000A1;
+    margin-bottom: 10px;
+}
+
+.cart-box p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Link Styling for Buttons */
+.cart-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cart-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .cart-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-container {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}

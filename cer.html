@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Qualifications</title>
+    <link rel="stylesheet" href="cer.css">
+</head>
+<body>
+    <header>
+        <h1>Educational Qualifications</h1>
+    </header>
+    <main>
+        <section id="education">
+            <h2>Certifications</h2>
+            <form id="educationForm" method="POST" action="add_education.php">
+                <label for="degree">Certificate Name:</label>
+                <input type="text" id="certification" name="certification" placeholder="e.g., Python for Beginners" required>
+                
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" placeholder="e.g., E-Learning Platform, Moratuwa University" required>
+
+                
+                <button type="submit">Add Certification</button>
+            </form>
+            
+            <div id="educationList">
+                <!-- Certifications will be dynamically loaded here -->
+            </div>
+        </section>
+        <section><br>
+            <center><a href="upload11.php">Upload Documents</a></center>
+        </section>
+    </main>
+
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Qualifications</title>
+    <link rel="stylesheet" href="edu.css">
+</head>
+<body>
+    <section id="education">
+        <h2>Educational Qualifications</h2>
+        <form id="educationForm" method="POST" action="add_education.php">
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" placeholder="e.g., BSc in Computer Science" required>
+            
+            <label for="institution">Institution:</label>
+            <input type="text" id="institution" name="institution" placeholder="e.g., Kingston University" required>
+            
+            <label for="year">Year of Completion:</label>
+            <input type="number" id="year" name="year_of_completion" min="1900" max="2099" required>
+            
+            <button type="submit">Add Qualification</button>
+        </form>
+        
+        <div id="educationList">
+            <!-- Loaded dynamically -->
+        </div>
+    </section>
+    <script src="script1.js"></script>
+    <center><a href="upload12.php">Upload Documents</center>
+</body>
+</html>

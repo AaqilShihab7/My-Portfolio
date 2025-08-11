@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif; 
+    background: linear-gradient(135deg, #eef2f3, #dfe9f3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.login-container {
+    background: #ffffff; /* Clean white card style */
+    padding: 50px;
+    border-radius: 10px; /* More rounded corners for a modern design */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow for premium depth */
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+   box-shadow: 0 10px 25px #0000A1; 
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: Magneto;
+    color: #34495e;
+    margin-top: -20px;
+    background: linear-gradient(135deg,#0000A1,#00A1D1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #0000A1;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #0000A1;
+    border-radius: 6px;
+    background-color: #f9fafb; /* Slight background color for inputs */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00A1D1;
+    box-shadow: 0 0 6px rgba(41, 128, 185, 0.4); 
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #0000A1,#00A1D1); 
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    margin-left: 12px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00A1D1,#0000A1); /* Reverse gradient on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+button:active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Slight press shadow */
+}
+
+/* Additional Styling */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #2980b9;
+}
+.icon{
+    margin-left: 300px;
+    margin-top: -20px;
+
+}
+.icon i {
+    font-size: 2rem; 
+    color: red;
+}
+.icon i:hover {
+    
+    color: #DC00FF;
+}

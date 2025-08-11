@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ECFF8C, white);
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #0000A1, #00A1D1);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    
+}
+
+header h1 {
+    font-family: "Magneto", cursive;
+    font-size: 36px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #FFA500;
+}
+
+.profile_picture1 img {
+    border-radius: 50%;
+    width: 130px;
+    height: 150px;
+    margin-right: 20px;
+    float: right;
+}
+.profile-video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.profile-video:hover {
+    transform: scale(1.05);
+
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.about-content, .edu {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-content p, .edu ul {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+video.profile-video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactForm input, #contactForm textarea, #contactForm button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#contactForm button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    .profile_picture1 img {
+        display: block;
+        margin: 10px auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #contactForm {
+        width: 90%;
+    }
+
+    video.profile-video {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    #contactForm input, #contactForm textarea, #contactForm button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
